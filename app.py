@@ -52,7 +52,11 @@ if st.button("Go"):
 
     st.session_state["user_input"] = policy_check
 
+if st.button("Reset"):
+    st.session_state["user_input"] = ""
+
 user_input = placeholder.text_input(label="Account number",key="user_input")
+
 
 #st.button("Go", on_click=getQualityCheck())
 #st.write("The account number is: ", st.session_state["outresult"])
